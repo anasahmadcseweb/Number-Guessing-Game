@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guess The Number</title>
+
+    <link rel="stylesheet" href="quick.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <div class="badge">🎯 NUMBER GAME</div>
+
+        <h1>Guess The Number</h1>
+
+        <p class="subtitle">
+            I'm thinking of a number between <b>1 and 100</b>
+        </p>
+
+        <div class="number-box" id="numberBox">
+            ?
+        </div>
+
+        <input
+            type="number"
+            id="guessInput"
+            placeholder="Enter your guess"
+            min="1"
+            max="100"
+        >
+
+        <div class="button-container">
+
+            <button id="guessBtn">
+                GUESS
+            </button>
+
+            <button id="quitBtn" class="quit-btn">
+                QUIT
+            </button>
+
+        </div>
+
+        <div class="message" id="message">
+            Make your first guess!
+        </div>
+
+        <div class="attempts">
+            Attempts: <span id="attempts">0</span>
+        </div>
+
+        <button id="newGameBtn" class="new-game">
+            🔄 New Game
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
